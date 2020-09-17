@@ -11,7 +11,7 @@ On completion of this task, you will have built a tool that:
 
 It is recommended to start with a simple program that only completes the first function, then add additional functionality until the program is complete.
 
-To simplify this task, starting code has been produced. Feel free to discard it.
+To simplify this task, some ideas on how to structure your code has been produced. Feel free to discard it.
 
 Use of modules and code snippets found online may be used, with the exception of other members’ work that was developed for the completion of this task. Copied code must be identified and the member must be able to explain what it does.
 
