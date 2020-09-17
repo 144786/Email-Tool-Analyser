@@ -1,1 +1,39 @@
+# build a list of all the filenames in the directory - make sure to test if it is actually an email file (ends in .msg) before including it in your list! the 'os' module
+# has a useful functoin called 'walk' that can help with this
 
+# for all those email filenames that we gathered above, grab that file and convert it into an email object. There is at least one module out there that can help. 
+# Do some searching and let the instructor know what you found - they will direct you to one that is known to work.
+
+# for each email in your list of email objects, does it contain a link? If so, store the links. You may want to consider using a helper function at this point to do the 
+# grunt work of looking through the email's text and returning a list of links found, leaving you with something like:
+
+# for email in emails:
+#   list_of_links.append(helper_function_1(email))
+
+# <hint: regex may be useful here, bit there may also be modules written by other people you can use to find links in text>
+
+# do the same for attachments:
+#   list_of_attachments.append(helper_function_2(email))
+
+# half-time: save your list of links to a text file, and write all your attachments to a folder.
+
+# now we need a service to check our list of links to see if any are malicious. Look around for a URL checker with an API. Do some searching and let the instructor
+# know what you found - they will direct you to one that is known to work. Again, I'd use a helper method here that takes care of doing the checking and returns "true" if the like
+# is known to be bad; something like:
+
+# for link in list_of_links:
+#   if link_is_bad(link):
+#       bad_links.append(link)
+
+# now we need a service to check our list of attachment hashes to see any are malicious. Generally, we DO NOT submit files to external services, but hashes are okay (but manage your expectations
+# WRT how useful hash checking normally is in the real workd). Look around for a hash checker. Do some searching and let the instructor know what you found - they will direct
+# you to one that is known to work. Once more, I'd use a helper method here that takes care of doing the checking and returns "true" if there is a match to a known bad hash:
+# is known to be bad; something like:
+
+# for attachment in attachments:
+#   if attachment_is_bad(attachment):
+#       bad_attachments.append(attachment)
+
+# Almost done: save your list of bad links to a text file, and write all your bad attachments to a folder.
+
+# And that's it!
