@@ -3,7 +3,7 @@
 Welcome to the email tool analyzer task!
 On completion of this task, you will have built a tool that:
 
-1. Takes-in a directory full of email.
+1.  Takes-in a directory full of emails (contained in the "emails" folder).
 2.  Creates a list of all the links in these emails.
 3.  Creates a folder of all the attachments in these emails.
 4.  Uses an external service to check all the links in all of the emails.
